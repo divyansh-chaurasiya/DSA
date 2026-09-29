@@ -10,7 +10,7 @@ public:
         }
         if(idx == -1){reverse(nums.begin(),nums.end());}
         else{
-            for(int i = n-1; i>=idx; i--){
+            for(int i = n-1; i>idx; i--){
                 if(nums[i] > nums[idx]){swap(nums[idx],nums[i]);break;}
             }
             reverse(nums.begin()+idx+1,nums.end());
